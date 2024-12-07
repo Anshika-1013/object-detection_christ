@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>Detection Results</title>
+</head>
+<body>
+    <h1>Object Detection Results</h1>
+    <h2>Original Image</h2>
+    <img src="{{ input_image }}" alt="Original Image">
+    <h2>Detected Image</h2>
+    <img src="{{ output_image }}" alt="Detected Image">
+    <a href="/">Upload another image</a>
+</body>
+</html>
